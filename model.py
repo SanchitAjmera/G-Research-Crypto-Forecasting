@@ -21,8 +21,8 @@ def graph(pred, expected):
     plt.xlabel('Time Scale')
     plt.ylabel('Scaled USD')
     plt.legend()
-    plt.show()
     plt.savefig("prediction.png")
+    plt.show()
 
 #Get the Dataset
 df=pd.read_csv('supplemental_train.csv',na_values=['null'],index_col='timestamp',parse_dates=True,infer_datetime_format=True)
